@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>رسالة إلى حبيبتي ️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--pink:#ff5c9b;--light:#ffd2e2;--purple:#9d6cff;--bg:#080611}
+html{scroll-behavior:smooth}
+body{font-family:Cairo,sans-serif;background:var(--bg);color:#fff;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 15% 15%,#50163155,transparent 28%),radial-gradient(circle at 85% 25%,#45207555,transparent 30%),linear-gradient(135deg,#080611,#140817 50%,#080611)}
+#stars{position:fixed;inset:0;z-index:-2;pointer-events:none}
+.screen{position:fixed;inset:0;z-index:100;background:radial-gradient(circle at center,#321329,#080611 65%);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;transition:1s}
+.screen.hide{opacity:0;visibility:hidden;pointer-events:none}
+.envelope{width:min(440px,94vw);padding:42px 28px;border:1px solid #ffffff18;border-radius:35px;background:#ffffff0b;backdrop-filter:blur(20px);box-shadow:0 30px 100px #0008}
+.envelope .heart{font-size:70px;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.envelope h1{font-family:"Playfair Display";font-size:42px;margin:15px 0 8px}
+.envelope p{color:#cbbdcc;margin-bottom:25px;line-height:1.9}
+button,.btn{border:0;border-radius:99px;padding:14px 27px;font:700 15px Cairo;color:#fff;cursor:pointer;background:linear-gradient(100deg,var(--pink),var(--purple));box-shadow:0 12px 35px #ff4d8c30;transition:.25s}
+button:hover,.btn:hover{transform:translateY(-3px);box-shadow:0 16px 45px #ff4d8c55}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px 20px;position:relative}
+.badge{display:inline-block;padding:7px 17px;border-radius:99px;border:1px solid #ffffff1f;background:#ffffff0a;color:#ffc0d8}
+.hero h1{font-family:"Playfair Display";font-size:clamp(55px,11vw,110px);line-height:1;margin:25px 0 12px}
+.grad{background:linear-gradient(90deg,#fff,#ff9fc5,#c8a5ff);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:680px;margin:auto;color:#d0c4d2;line-height:2;font-size:18px}
+.date{font-size:45px;font-weight:800;color:#ffb3ce;margin:20px}
+section{max-width:1080px;margin:auto;padding:90px 20px}
+.heading{text-align:center;margin-bottom:38px}
+.heading h2{font-size:36px;margin-bottom:8px}
+.heading p{color:#aa9dad}
+.glass{border:1px solid #ffffff12;background:#ffffff09;border-radius:30px;padding:30px;backdrop-filter:blur(15px);box-shadow:0 20px 70px #0003}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;max-width:760px;margin:auto}
+.time{padding:25px 8px;text-align:center;border-radius:22px;background:#ffffff08;border:1px solid #ffffff0d}
+.time b{font-size:42px;display:block;color:#fff}.time span{font-size:13px;color:#aa9dad}
+.letter{font-size:17px;line-height:2.25;color:#eee7ee}.letter p{margin:8px 0}.pink{color:#ff9fc5;font-weight:800}
+.gallery{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-auto-rows:220px;gap:15px}
+.photo{border-radius:25px;position:relative;overflow:hidden;background:linear-gradient(145deg,#4b183a,#171022);border:1px solid #ffffff12;cursor:pointer}
+.photo:first-child{grid-row:span 2}
+.photo:before{content:"";position:absolute;inset:0;display:grid;place-items:center;font-size:55px;opacity:.35}
+.photo div{position:absolute;bottom:0;inset-inline:0;padding:25px;background:linear-gradient(transparent,#000b)}
+.photo h3{font-size:18px}.photo p{font-size:12px;color:#c7bac9}
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.reason{padding:28px;border-radius:24px;background:#ffffff08;border:1px solid #ffffff0d}.reason i{font-style:normal;font-size:35px}.reason h3{margin:10px 0}.reason p{font-size:13px;line-height:1.9;color:#b8abb9}
+.games{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.game{padding:28px;border-radius:27px;background:#ffffff09;border:1px solid #ffffff10}
+.game h3{font-size:22px;margin-bottom:8px}.game small{color:#a99aaa}.game-area{margin-top:20px;text-align:center}
+.hearts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+.heartbtn{height:65px;background:#ffffff08;border:1px solid #ffffff12;border-radius:16px;font-size:28px;cursor:pointer;transition:.2s}.heartbtn:hover{transform:scale(1.05)}
+.choice{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px}.choice button{background:#ffffff0d;border:1px solid #ffffff15;box-shadow:none}
+#gameMsg,#quizMsg{margin-top:15px;color:#ffc0d8;min-height:28px}
+.timeline{position:relative;max-width:700px;margin:auto}.event{display:flex;gap:18px;margin:22px 0;align-items:flex-start}.dot{width:15px;height:15px;min-width:15px;border-radius:50%;background:var(--pink);margin-top:9px;box-shadow:0 0 20px #ff5c9b}.event h3{margin-bottom:4px}.event p{color:#aaa0ad;font-size:13px}
+.surprise{text-align:center}.secret{display:none;margin:30px auto 0;max-width:700px;font-size:22px;line-height:2;color:#ffc1d8}
+footer{text-align:center;padding:70px 20px;color:#716575;font-size:13px}
+
+
+.style-panel{position:fixed;left:18px;bottom:18px;z-index:20;display:flex;gap:6px;padding:8px;border-radius:99px;background:#0f0a16dd;border:1px solid #ffffff12;backdrop-filter:blur(12px)}
+.style-panel button{padding:7px 12px;font-size:11px;background:#ffffff0d;box-shadow:none}
+.photo-tools{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0 auto 22px}
+.upload-btn{display:inline-block;border-radius:99px;padding:13px 22px;font-weight:700;font-size:14px;color:#fff;cursor:pointer;background:#ffffff0d;border:1px solid #ffffff18}
+.upload-btn:hover{background:#ffffff15}
+.user-photo{background-size:cover!important;background-position:center!important}
+.user-photo:before{display:none!important}
+.music-list{max-width:760px;margin:auto}
+.music-item{display:flex;align-items:center;gap:15px;padding:14px 0;border-bottom:1px solid #ffffff0c}
+.music-item:last-of-type{border:0}
+.album{width:55px;height:55px;border-radius:16px;background:linear-gradient(135deg,#ff5c9b55,#9d6cff55);display:grid;place-items:center;font-size:25px}
+.track{flex:1}.track b{display:block}.track small{color:#9e919f}
+.music-item button{padding:10px 16px}
+#musicStatus{margin-top:18px;color:#ffb3ce;text-align:center;font-size:13px}
+#lightbox{position:fixed;inset:0;background:#000d;z-index:50;display:none;align-items:center;justify-content:center;padding:20px}
+#lightbox.show{display:flex}.lightboxBox{max-width:800px;width:100%;padding:40px;border-radius:30px;text-align:center;background:#171020;border:1px solid #ffffff15}.close{float:left;background:none;box-shadow:none;padding:4px;font-size:25px}
+@media(max-width:700px){.count{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.photo:first-child{grid-row:span 1}.reasons,.games{grid-template-columns:1fr}.hero h1{font-size:58px}section{padding:65px 15px}}
+
+.music-player{display:flex;gap:20px;align-items:center;padding:20px;margin:20px 0}
+.album-art{width:110px;height:110px;border-radius:22px;display:grid;place-items:center;font-size:42px;background:linear-gradient(135deg,#ff8fb1,#9b7cff);flex:none}
+.now-playing{flex:1}.np-label{font-size:12px;opacity:.65}.now-playing h3{margin:5px 0}.now-playing p{margin:0 0 12px;opacity:.7}
+.now-playing audio{width:100%}
+.music-actions{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.upload-btn,.secondary-btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:14px;border:0;cursor:pointer;font:inherit}
+.upload-btn{background:#ff5f8f;color:white}.secondary-btn{background:rgba(255,255,255,.12);color:inherit}
+.music-list{display:grid;gap:10px;margin-top:15px}
+.song-item{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08)}
+.song-item .song-icon{font-size:24px}.song-info{flex:1;min-width:0}.song-info strong,.song-info span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.song-info span{font-size:12px;opacity:.6;margin-top:3px}
+.song-play{border:0;border-radius:50%;width:40px;height:40px;cursor:pointer;background:#ff5f8f;color:white}.music-status{margin-top:12px;font-size:13px;opacity:.7}
+@media(max-width:600px){.music-player{align-items:flex-start}.album-art{width:75px;height:75px;font-size:30px}.song-item{padding:10px}}
+
+.story-modal{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(8,5,18,.78);backdrop-filter:blur(12px)}
+.story-modal.show{display:flex}
+.story-box{position:relative;width:min(680px,94vw);max-height:82vh;overflow:auto;padding:38px 30px 28px;border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.07));border:1px solid rgba(255,255,255,.18);box-shadow:0 25px 80px rgba(0,0,0,.35);text-align:center}
+.story-close{position:absolute;right:15px;top:10px;width:38px;height:38px;border:0;border-radius:50%;background:rgba(255,255,255,.1);color:inherit;font-size:27px;cursor:pointer}
+.story-heart{font-size:42px;line-height:1;margin-bottom:8px}
+.story-label{font-size:11px;letter-spacing:4px;opacity:.55}
+.story-box h2{margin:10px 0 18px}
+.story-text{min-height:120px;line-height:2;font-size:18px;white-space:pre-wrap;text-align:right}
+.story-next{margin-top:22px;border:0;border-radius:16px;padding:12px 22px;background:#ff5f8f;color:#fff;cursor:pointer;font:inherit}
+.clickable-title{cursor:pointer;transition:transform .2s,opacity .2s}
+.clickable-title:hover{transform:translateY(-2px);opacity:.82}
+@media(max-width:600px){.story-box{padding:34px 20px 22px}.story-text{font-size:16px}}
+
+/* Night blue romantic theme */
+:root{
+  --night-1:#050b1f;
+  --night-2:#0a1533;
+  --night-3:#101f46;
+  --night-line:rgba(130,165,230,.22);
+  --night-text:#e8efff;
+  --night-muted:#aab9d8;
+  --night-accent:#7da2ff;
+}
+html,body{
+  background:radial-gradient(circle at 50% 0%,#142b5b 0%,#080f26 42%,#030713 100%) !important;
+  color:var(--night-text) !important;
+}
+body:before{
+  background:radial-gradient(circle,rgba(91,137,255,.12) 0,transparent 55%) !important;
+}
+.glass,.card,.music-player,.story-box,.modal-content{
+  background:linear-gradient(145deg,rgba(18,36,75,.88),rgba(5,12,31,.94)) !important;
+  border-color:var(--night-line) !important;
+  box-shadow:0 20px 70px rgba(0,0,0,.38) !important;
+}
+h1,h2,h3{color:#edf3ff !important}
+p,.muted,.eyebrow{color:var(--night-muted)}
+button,.upload-btn{
+  background:linear-gradient(135deg,#5579cf,#789cf0) !important;
+  color:#fff !important;
+}
+.secondary-btn{
+  background:rgba(125,162,255,.12) !important;
+  border:1px solid var(--night-line) !important;
+}
+a{color:#9dbaff !important}
+.clickable-title{
+  cursor:pointer !important;
+  position:relative;
+}
+.clickable-title:after{
+  content:'';
+  display:block;
+  width:38px;
+  height:1px;
+  margin:10px auto 0;
+  background:#789cf0;
+  opacity:.7;
+}
+.story-heart{display:none !important}
+
+.october-card{
+  max-width:760px;
+  margin:28px auto;
+  padding:34px 28px;
+  text-align:center;
+  border-radius:30px;
+}
+.october-date{
+  font-size:11px;
+  letter-spacing:6px;
+  color:#88a9ff;
+  opacity:.85;
+}
+.october-card h2{
+  margin:12px 0 6px;
+  font-size:clamp(30px,6vw,48px);
+  cursor:pointer;
+}
+.october-card>p{margin:0 0 20px}
+.october-note{
+  min-height:150px;
+  padding:20px;
+  border-radius:18px;
+  border:1px solid var(--night-line);
+  background:rgba(2,8,23,.55);
+  text-align:right;
+  line-height:2;
+  outline:none;
+  color:#eaf0ff;
+}
+.october-note:focus{border-color:rgba(125,162,255,.7);box-shadow:0 0 0 3px rgba(125,162,255,.08)}
+.october-tools{display:flex;justify-content:center;gap:10px;margin-top:14px;flex-wrap:wrap}
+.october-tools button{border:0;border-radius:13px;padding:10px 18px;cursor:pointer;font:inherit}
+.saved-note{min-height:22px;margin-top:10px;font-size:12px;color:#9dbaff}
+</style>
+</head>
+<body>
+<section class="october-card glass" id="october7">
+  <div class="october-date">07 OCTOBER</div>
+  <h2 class="editable-title" onclick="openEditableOctober()">7 أكتوبر</h2>
+  <p>اضغط هنا واكتب ما تريد أن يبقى في هذه الذكرى.</p>
+  <div class="october-note" id="octoberNote" contenteditable="true"
+       spellcheck="false">اكتب قصتك هنا...</div>
+  <div class="october-tools">
+    <button onclick="saveOctober()">حفظ</button>
+    <button class="secondary-btn" onclick="clearOctober()">مسح النص</button>
+  </div>
+  <div class="saved-note" id="savedOctober"></div>
+</section>
+
+<canvas id="stars"></canvas>
+
+<div class="screen" id="welcome">
+ <div class="envelope">
+  <div class="heart"></div>
+  <h1>لديكِ رسالة</h1>
+  <p>رسالة صنعت خصيصاً لكِ... لكن قبل أن تفتحيها، تأكدي أنكِ مستعدة للقليل من الحب والمفاجآت. ️</p>
+  <button onclick="openSite()">افتحي الرسالة </button>
+ </div>
+</div>
+
+<header class="hero">
+ <div>
+  <div class="badge">7 أكتوبر • يوم مميز جداً</div>
+  <h1>إلى <span class="grad">حبيبتي</span> ️</h1>
+  <p>لو كان بإمكاني أن أضع كل الكلام الجميل في مكان واحد، فسيكون هذا الموقع لكِ.</p>
+  <div class="date">07 • 10 • 2026</div>
+  <a href="#count" class="btn">ابدئي الرحلة ↓</a>
+ </div>
+</header>
+
+<section id="count">
+ <div class="heading"><h2>⏳ العد التنازلي</h2><p>حتى يأتي يومك الكبير</p></div>
+ <div class="count">
+  <div class="time"><b id="d">00</b><span>يوم</span></div>
+  <div class="time"><b id="h">00</b><span>ساعة</span></div>
+  <div class="time"><b id="m">00</b><span>دقيقة</span></div>
+  <div class="time"><b id="s">00</b><span>ثانية</span></div>
+ </div>
+</section>
+
+<section>
+ <div class="heading"><h2> رسالتي لكِ</h2><p>شيء لا يمكن اختصاره في «كل عام وأنتِ بخير»</p></div>
+ <div class="glass letter">
+  <p>إلى <span class="pink">الشخص الذي يعني لي الكثير</span>،</p>
+  <p>في هذا اليوم لا أريد أن أتمنى لكِ سنة جميلة فقط، بل أتمنى أن تكون كل لحظة قادمة ألطف من التي قبلها، وأن تضحكي كثيراً، وتحققي الأشياء التي تتمنينها، وتبقي دائماً كما أنتِ.</p>
+  <p>ربما الكلمات لا تكفي، لكن أتمنى أن تشعري من خلال هذه الصفحة بمدى تميزك بالنسبة لي.</p>
+  <p>عيد ميلاد سعيد يا <span class="pink">حبيبتي</span>. ️</p>
+ </div>
+</section>
+
+<section>
+ <div class="heading"><h2> ألبوم الذكريات</h2><p>اضغطي على أي صورة لتظهري مفاجأة صغيرة — واستبدلي الخانات بصوركم لاحقاً.</p></div>
+ <div class="photo-tools">
+   <label class="upload-btn"> التقاط صورة بالكاميرا<input id="cameraInput" type="file" accept="image/*" capture="environment" hidden></label>
+   <label class="upload-btn">️ اختيار صورة من الجهاز<input id="galleryInput" type="file" accept="image/*" multiple hidden></label>
+   <button onclick="clearPhotos()">مسح الصور</button>
+ </div>
+ <div class="gallery" id="gallery">
+  <div class="photo empty-photo"><div><h3>أضيفي أول صورة ️</h3><p>الكاميرا أو الجهاز</p></div></div>
+  <div class="photo empty-photo"><div><h3>ذكرى </h3><p>يمكنك إضافة صورة</p></div></div>
+  <div class="photo empty-photo"><div><h3>ضحكتها </h3><p>أجمل لحظة</p></div></div>
+ </div>
+</section>
+
+
+<section id="music" class="section" id="music">
+  <div class="section-head">
+    <span class="eyebrow"> OUR SOUNDTRACK</span>
+    <h2>أغانيها المفضلة</h2>
+    <p>أضيفي ملفات MP3 من جهازك، وستظهر هنا كقائمة تشغيل داخل الموقع.</p>
+  </div>
+
+  <div class="music-player glass">
+    <div class="album-art" id="albumArt"></div>
+    <div class="now-playing">
+      <div class="np-label">يتم تشغيل</div>
+      <h3 id="nowTitle">لم يتم اختيار أغنية</h3>
+      <p id="nowArtist">أضيفي أول أغنية من الزر بالأسفل</p>
+      <audio id="audioPlayer" controls preload="metadata"></audio>
+    </div>
+  </div>
+
+  <div class="music-actions">
+    <label class="upload-btn">
+       إضافة أغاني MP3
+      <input id="musicInput" type="file" accept="audio/*" multiple hidden>
+    </label>
+    <button class="secondary-btn" onclick="clearSongs()">️ حذف الأغاني</button>
+  </div>
+
+  <div id="musicList" class="music-list"></div>
+  <div id="musicStatus" class="music-status">يمكنك اختيار أغنية أو عدة أغاني من جهازك.</div>
+</section>
+
+<section>
+ <div class="heading"><h2> لماذا هي مميزة؟</h2><p>ثلاثة أسباب فقط... والباقي كثير.</p></div>
+ <div class="reasons">
+  <div class="reason"><i></i><h3>ابتسامتها</h3><p>تفاصيل بسيطة منها قادرة على تغيير يوم كامل.</p></div>
+  <div class="reason"><i></i><h3>قلبها</h3><p>الطيبة والاهتمام بالأشياء الصغيرة تجعلها مختلفة.</p></div>
+  <div class="reason"><i></i><h3>وجودها</h3><p>هناك أشخاص لا يحتاجون إلى فعل شيء حتى يصبح وجودهم مميزاً.</p></div>
+ </div>
+</section>
+
+<section>
+ <div class="heading"><h2> وقت اللعب</h2><p>لأن عيد الميلاد يحتاج إلى شيء ممتع أيضاً.</p></div>
+ <div class="games">
+  <div class="game">
+   <h3> اجمعي القلوب</h3><small>اضغطي على 5 قلوب مخفية للفوز.</small>
+   <div class="hearts" id="hearts"></div>
+   <div id="gameMsg"></div>
+  </div>
+  <div class="game">
+   <h3> سؤال صغير</h3><small>اختاري الإجابة التي تعتقدين أنها صحيحة.</small>
+   <p style="margin-top:18px">ما الشيء الذي أتمنى أن أراه في وجهك دائماً؟</p>
+   <div class="choice">
+    <button onclick="quiz(false)">الحزن</button>
+    <button onclick="quiz(true)">الابتسامة ️</button>
+    <button onclick="quiz(false)">الملل</button>
+   </div>
+   <div id="quizMsg"></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="heading"><h2>️ قصتنا لم تنتهِ</h2><p>اتركي هنا محطاتكم الخاصة</p></div>
+ <div class="glass timeline">
+  <div class="event"><span class="dot"></span><div><h3>البداية </h3><p>اكتبي تاريخ أو قصة بداية تعرفكما.</p></div></div>
+  <div class="event"><span class="dot"></span><div><h3>أول موقف لا يُنسى ️</h3><p>أضيفي هنا موقفاً تحبانه.</p></div></div>
+  <div class="event"><span class="dot"></span><div><h3>7 أكتوبر </h3><p>يوم ميلادها — يوم يستحق الاحتفال.</p></div></div>
+  <div class="event"><span class="dot"></span><div><h3>القادم... </h3><p>هناك الكثير من الذكريات التي لم تُكتب بعد.</p></div></div>
+ </div>
+</section>
+
+<section class="surprise">
+ <div class="heading"><h2> المفاجأة الأخيرة</h2><p>وصلتِ إلى النهاية... لكن ليس تماماً.</p></div>
+ <button onclick="surprise()">افتحي المفاجأة ️</button>
+ <div class="secret" id="secret">أنتِ لستِ مجرد شخصية في هذه الصفحة... أنتِ سبب وجودها أصلاً. ️<br>كل عام وأنتِ بخير، وكل عام وأنا أتمنى أن أراكِ سعيدة.</div>
+</section>
+
+
+<div class="style-panel">
+ <button onclick="changeFont('Cairo')">عصري</button>
+ <button onclick="changeFont('Playfair Display')">رومانسي</button>
+ <button onclick="changeFont('Georgia')">كلاسيكي</button>
+ <button onclick="changeFont('monospace')">مختلف</button>
+</div>
+
+<footer>صُنعت بحب • 07 أكتوبر 2026 • ️</footer>
+
+<div id="lightbox"><div class="lightboxBox"><button class="close" onclick="closePhoto()">×</button><div style="font-size:60px"></div><h2 id="lbTitle"></h2><p id="lbText" style="color:#bdb0bf;margin-top:12px;line-height:2"></p></div></div>
+
+<script>
+function openSite(){document.getElementById('welcome').classList.add('hide');document.body.style.overflowX='hidden'}
+const target=new Date('2026-10-07T00:00:00').getTime();
+function countdown(){
+ let x=Math.max(0,target-Date.now());
+ document.getElementById('d').textContent=Math.floor(x/86400000).toString().padStart(2,'0');
+ document.getElementById('h').textContent=Math.floor(x%86400000/3600000).toString().padStart(2,'0');
+ document.getElementById('m').textContent=Math.floor(x%3600000/60000).toString().padStart(2,'0');
+ document.getElementById('s').textContent=Math.floor(x%60000/1000).toString().padStart(2,'0');
+}countdown();setInterval(countdown,1000);
+
+
+function addPhoto(file){
+ if(!file)return;
+ const reader=new FileReader();
+ reader.onload=e=>{
+  const div=document.createElement('div');div.className='photo user-photo';div.style.backgroundImage=`url("${e.target.result}")`;
+  div.innerHTML='<div><h3>ذكرياتي ️</h3><p>صورة أضيفت من جهازك</p></div>';
+  div.onclick=()=>showPhoto('ذكرياتي ️','هذه الصورة محفوظة داخل الصفحة أثناء فتحها على هذا الجهاز.');
+  document.getElementById('gallery').appendChild(div);
+ };
+ reader.readAsDataURL(file);
+}
+document.getElementById('cameraInput').addEventListener('change',e=>addPhoto(e.target.files[0]));
+document.getElementById('galleryInput').addEventListener('change',e=>Array.from(e.target.files).forEach(addPhoto));
+function clearPhotos(){document.querySelectorAll('.user-photo').forEach(x=>x.remove())}
+
+function changeFont(font){
+ document.body.style.fontFamily=font+', sans-serif';
+ localStorage.setItem('birthdayFont',font);
+}
+const savedFont=localStorage.getItem('birthdayFont');if(savedFont)changeFont(savedFont);
+
+function showPhoto(t,x){document.getElementById('lbTitle').textContent=t;document.getElementById('lbText').textContent=x;document.getElementById('lightbox').classList.add('show')}
+function closePhoto(){document.getElementById('lightbox').classList.remove('show')}
+document.getElementById('lightbox').onclick=e=>{if(e.target.id==='lightbox')closePhoto()}
+
+let found=0,chosen=[];
+function makeHearts(){
+ const box=document.getElementById('hearts');box.innerHTML='';
+ for(let i=0;i<8;i++){let b=document.createElement('button');b.className='heartbtn';b.textContent='';b.onclick=()=>{
+   if(chosen[i])return;chosen[i]=1;b.textContent='️';found++;
+   if(found>=5){document.getElementById('gameMsg').textContent='فزتِ!  هذه القلوب كلها لكِ.';burst()}
+   else document.getElementById('gameMsg').textContent=`جميل! بقي ${5-found} قلوب.`;
+ };box.appendChild(b)}
+}
+makeHearts();
+function quiz(ok){document.getElementById('quizMsg').textContent=ok?'إجابة صحيحة! كنتِ تعرفين ذلك. ':'مممم... حاولي مرة أخرى '}
+function surprise(){document.getElementById('secret').style.display='block';burst()}
+function burst(){
+ for(let i=0;i<45;i++){let e=document.createElement('div');e.textContent=['️','','',''][Math.floor(Math.random()*4)];
+ e.style.cssText=`position:fixed;left:${Math.random()*100}vw;top:105vh;font-size:${15+Math.random()*25}px;z-index:200;transition:transform 3s,opacity 3s`;
+ document.body.appendChild(e);setTimeout(()=>{e.style.transform=`translateY(-120vh) rotate(${Math.random()*500}deg)`;e.style.opacity=0},20);setTimeout(()=>e.remove(),3100)}
+}
+const c=document.getElementById('stars'),ctx=c.getContext('2d');let stars=[];
+function resize(){c.width=innerWidth;c.height=innerHeight;stars=Array.from({length:100},()=>({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*1.5+.2,a:Math.random()*6.28}))}
+resize();addEventListener('resize',resize);
+function draw(){ctx.clearRect(0,0,c.width,c.height);stars.forEach(q=>{q.a+=.012;ctx.globalAlpha=.18+.2*Math.sin(q.a);ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(q.x,q.y,q.r,0,7);ctx.fill()});requestAnimationFrame(draw)}draw();
+
+// Real local music player
+const musicInput = document.getElementById('musicInput');
+const audioPlayer = document.getElementById('audioPlayer');
+const musicList = document.getElementById('musicList');
+const nowTitle = document.getElementById('nowTitle');
+const nowArtist = document.getElementById('nowArtist');
+const musicStatus = document.getElementById('musicStatus');
+let songs = [];
+let currentSong = -1;
+
+musicInput?.addEventListener('change', e => {
+  const files = [...e.target.files].filter(f => f.type.startsWith('audio/'));
+  files.forEach(file => songs.push({file, url: URL.createObjectURL(file)}));
+  renderSongs();
+  if (currentSong === -1 && songs.length) playSong(0);
+  musicInput.value = '';
+});
+
+function renderSongs(){
+  musicList.innerHTML = '';
+  if (!songs.length){
+    musicStatus.textContent = 'يمكنك اختيار أغنية أو عدة أغاني من جهازك.';
+    return;
+  }
+  musicStatus.textContent = `${songs.length} أغنية مضافة`;
+  songs.forEach((song,i)=>{
+    const row=document.createElement('div');
+    row.className='song-item';
+    row.innerHTML=`
+      <div class="song-icon"></div>
+      <div class="song-info">
+        <strong>${escapeHtml(song.file.name.replace(/\.[^/.]+$/,''))}</strong>
+        <span>${formatBytes(song.file.size)}</span>
+      </div>
+      <button class="song-play" onclick="playSong(${i})">${i===currentSong && !audioPlayer.paused ? '' : '▶'}</button>`;
+    musicList.appendChild(row);
+  });
+}
+
+function playSong(index){
+  if(!songs[index]) return;
+  currentSong=index;
+  const song=songs[index];
+  audioPlayer.src=song.url;
+  nowTitle.textContent=song.file.name.replace(/\.[^/.]+$/,'');
+  nowArtist.textContent='ملف صوتي من جهازك';
+  audioPlayer.play().catch(()=>{});
+  renderSongs();
+}
+
+audioPlayer?.addEventListener('play', renderSongs);
+audioPlayer?.addEventListener('pause', renderSongs);
+audioPlayer?.addEventListener('ended', ()=>{
+  if(currentSong < songs.length-1) playSong(currentSong+1);
+  else renderSongs();
+});
+
+function clearSongs(){
+  songs.forEach(s=>URL.revokeObjectURL(s.url));
+  songs=[];
+  currentSong=-1;
+  audioPlayer.pause();
+  audioPlayer.removeAttribute('src');
+  audioPlayer.load();
+  nowTitle.textContent='لم يتم اختيار أغنية';
+  nowArtist.textContent='أضيفي أول أغنية من الزر بالأسفل';
+  renderSongs();
+}
+
+function formatBytes(bytes){
+  if(bytes < 1024*1024) return Math.round(bytes/1024)+' KB';
+  return (bytes/(1024*1024)).toFixed(1)+' MB';
+}
+function escapeHtml(s){
+  return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+}
+
+
+// Clickable titles + typewriter stories
+const storyData = {
+  "أغانيها المفضلة": "هناك أغانٍ نسمعها وننساها، وهناك أغانٍ تصبح مرتبطة بشخص معيّن. هذه القائمة ليست مجرد موسيقى؛ كل أغنية هنا يمكن أن تحمل ذكرى، لحظة، أو شعورًا يجعلني أتذكركِ.",
+  "لماذا هي مميزة؟": "لأن وجودكِ أضاف أشياء جميلة إلى أيامي. فيكِ تفاصيل صغيرة قد لا يلاحظها الجميع، لكنها بالنسبة لي تصنع فرقًا كبيرًا. ولهذا، مهما حاولت أن أكتب، ستبقى بعض الأشياء أكبر من الكلمات.",
+  "قصتنا": "قصتنا لم تنتهِ... هذه الصفحة ليست النهاية، بل مكان نترك فيه ذكرياتنا وكلماتنا ولحظاتنا الجميلة. وكل مرة نضيف فيها ذكرى جديدة، نكتب سطرًا جديدًا من قصتنا.",
+  "ألبوم الذكريات": "كل صورة هنا تحفظ لحظة لا نريد أن تضيع. ومع الوقت سيكبر هذا الألبوم، وتكبر معه الحكاية التي بدأنا كتابتها معًا.",
+  "رسالة إلى حبيبتي": "إلى الإنسانة التي جعلت لهذه الأيام معنى أجمل... هذه الصفحة كلها لكِ. وكل تفصيلة فيها هي طريقة صغيرة لأقول لكِ إنكِ مهمة بالنسبة لي.",
+  "مفاجأة أخيرة": "إذا وصلتِ إلى هنا، فاعلمي أن القصة لا تنتهي عند هذه الشاشة. أجمل جزء منها هو ما سنكتبه في الأيام القادمة، ذكرى بعد ذكرى، وضحكة بعد ضحكة."
+};
+
+let storyTimer=null;
+function openStory(title){
+  const modal=document.getElementById('storyModal');
+  const titleEl=document.getElementById('storyTitle');
+  const textEl=document.getElementById('storyText');
+  if(!modal||!titleEl||!textEl)return;
+  clearInterval(storyTimer);
+  titleEl.textContent=title;
+  textEl.textContent='';
+  modal.classList.add('show');
+  modal.setAttribute('aria-hidden','false');
+  const text=storyData[title] || `هذه الصفحة جزء من قصتنا. لم تنتهِ الحكاية بعد، وما زال هناك الكثير من اللحظات الجميلة التي سنكتبها معًا.`;
+  let i=0;
+  storyTimer=setInterval(()=>{
+    textEl.textContent += text[i++];
+    if(i>=text.length) clearInterval(storyTimer);
+  },32);
+}
+function closeStory(){
+  clearInterval(storyTimer);
+  const modal=document.getElementById('storyModal');
+  if(modal){
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden','true');
+  }
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeStory()});
+document.addEventListener('click',e=>{
+  if(e.target.id==='storyModal')closeStory();
+});
+document.addEventListener('DOMContentLoaded',()=>{
+  document.querySelectorAll('h2').forEach(h=>{
+    const title=h.textContent.trim();
+    h.classList.add('clickable-title');
+    h.title='اضغط لفتح القصة';
+    h.addEventListener('click',()=>openStory(title));
+  });
+});
+
+
+// 7 October editable memory
+const octoberDefault = 'اكتب قصتك هنا...';
+function saveOctober(){
+  const el=document.getElementById('octoberNote');
+  const saved=document.getElementById('savedOctober');
+  if(!el)return;
+  localStorage.setItem('october7Story',el.innerText);
+  if(saved)saved.textContent='تم حفظ الذكرى على هذا الجهاز.';
+}
+function clearOctober(){
+  const el=document.getElementById('octoberNote');
+  if(!el)return;
+  el.innerText='';
+  localStorage.removeItem('october7Story');
+  const saved=document.getElementById('savedOctober');
+  if(saved)saved.textContent='';
+}
+function openEditableOctober(){
+  const el=document.getElementById('octoberNote');
+  if(el){
+    el.scrollIntoView({behavior:'smooth',block:'center'});
+    setTimeout(()=>el.focus(),350);
+  }
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  const el=document.getElementById('octoberNote');
+  const saved=localStorage.getItem('october7Story');
+  if(el && saved!==null) el.innerText=saved;
+});
+
+</script>
+
+<!-- Typewriter story modal -->
+<div id="storyModal" class="story-modal" aria-hidden="true">
+  <div class="story-box">
+    <button class="story-close" onclick="closeStory()" aria-label="إغلاق">×</button>
+    <div class="story-heart"></div>
+    <div class="story-label">OUR STORY</div>
+    <h2 id="storyTitle">قصتنا</h2>
+    <div id="storyText" class="story-text"></div>
+    <button class="story-next" onclick="closeStory()">متابعة القصة </button>
+  </div>
+</div>
+</body>
+</html>
